@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Viewport Meta Tag for Mobile Responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grow the Game - Connect, Play & Review Golf Courses</title>
+    <!-- External CSS Stylesheet Link -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<!-- NEW REVISION: Added id="top" to body tag to enable smooth scroll for "Back to Top" anchor -->
+<body id="top">
+
+    <!-- ========================================== -->
+    <!-- HEADER & NAVIGATION SECTION               -->
+    <!-- ========================================== -->
+    <header class="site-header">
+        <div class="logo-area">
+            <span class="logo-icon">⛳</span>
+            <span class="logo-text">Grow the Game</span>
+        </div>
+        
+        <!-- Main Navigation Bar -->
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#register">Register</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ========================================== -->
+    <!-- MAIN CONTENT AREA                          -->
+    <!-- ========================================== -->
+    <main>
+
+        <!-- 1. HOME SECTION -->
+        <section id="home" class="section home-section">
+            <!-- Hero banner background styled via styles.css using Backgroundimage.jpeg -->
+            <div class="hero-banner">
+                <div class="hero-content">
+                <img src="backgroundimage.jpg">
+                    <h1>Grow the Game</h1>
+                    <p class="tagline">Expanding the game for all to enjoy.</p>
+                    <p class="welcome-text">
+                        Welcome to Grow the Game, the ultimate online community built exclusively for golf enthusiasts of all ages and skill levels! Whether you're looking to share your latest fairway adventure, discover hidden gem courses in your area, or connect with local golfers for a weekend round, you've found your new clubhouse.
+                    </p>
+                    <a href="#register" class="btn btn-primary">Sign Up Today</a>
+                </div>
+            </div>
+
+            <!-- Featured Course Reviews Cards Subsection -->
+            <div class="reviews-container">
+                <h2>Featured Course Reviews</h2>
+                <p class="section-intro">See what fellow golfers in our community are saying about recent course visits.</p>
+
+                <div class="cards-grid">
+                    <!-- Review Card 1 -->
+                    <!-- NEW REVISION: Updated src to "Pinevalley.webp" -->
+                    <article class="card">
+                        <img src="Pinevalley.webp" alt="Scenic landscape at Pine Valley Golf Course" class="card-img">
+                        <div class="card-body">
+                            <h3 class="reviewer-name">Alex Morgan <span class="course-name">— Pine Valley Golf Course</span></h3>
+                            <div class="rating">★★★★★</div>
+                            <p class="review-snippet">
+                                "Pine Valley was in pristine condition this weekend! Fast greens, challenging bunkers, and the friendliest staff. Highly recommend booking early."
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Review Card 2 -->
+                    <!-- NEW REVISION: Updated src to "Oakmont.jpeg" -->
+                    <article class="card">
+                        <img src="Oakmont.jpeg" alt="Fairway looking toward the clubhouse at Oakmont Country Club" class="card-img">
+                        <div class="card-body">
+                            <h3 class="reviewer-name">Marcus Vance <span class="course-name">— Oakmont Country Club</span></h3>
+                            <div class="rating">★★★★★</div>
+                            <p class="review-snippet">
+                                “Historic course which has seen the footsteps of legends. Extremely challenging, no question- but a once-in-a-lifetime experience. I even met three new friends through Grow the Game, and we thoroughly enjoyed our round!”
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Review Card 3 -->
+                    <!-- NEW REVISION: Updated src to "Gilleteridge.jpeg", course name to "Gillette Ridge Golf Club", and review text -->
+                    <article class="card">
+                        <img src="gilletteridge.webp" alt="Challenging green and fairway at Gillette Ridge Golf Club" class="card-img">
+                        <div class="card-body">
+                            <h3 class="reviewer-name">Sarah Jenkins <span class="course-name">— Gillette Ridge Golf Club</span></h3>
+                            <div class="rating">★★★★☆</div>
+                            <p class="review-snippet">
+                                "Gillette Ridge is a difficult and challenging golf course, but it is incredibly rewarding and fun to play! Every hole tests your precision and decision making."
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. ABOUT US SECTION -->
+        <section id="about" class="section about-section">
+            <div class="about-wrapper">
+                <div class="about-text">
+                    <h2>About Us</h2>
+                    <p>
+                        Founded in 2023 by a group of four lifelong friends and regular golfers, <strong>Grow the Game</strong> was born out of a shared love for golf and a desire to connect the vast community of players. We sought to create a space for everyone who lives and breathes this game to share their passion, and meet others who share the same passion. Our platform has enabled thousands of golfers to share their experiences and develop lasting friendships.
+                    </p>
+                    <p>
+                        When we aren't building this platform, you can usually find us teeing off at our favorite local spot, 
+                        <a href="https://www.augustanational.com" target="_blank" rel="noopener noreferrer" class="external-link">Augusta National Golf Club</a>.
+                    </p>
+                    <p>
+                        Visit our official team headquarters:
+                    </p>
+                    
+                    <!-- Embedded Location Map for Headquarters -->
+                    <div class="map-wrapper">
+                        <iframe class="map-embed" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105891.13788225211!2d-82.022754!3d33.473498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f9cd3f639908ef%3A0xe2be502b4122d1df!2sAugusta%2C%20GA!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Grow the Game Headquarters Location"></iframe>
+                    </div>
+
+                    <h3>What Makes Our Platform Special:</h3>
+                    <ul class="special-list">
+                        <li><strong>Community Connection:</strong> Helping golfers meet one another and organize local tee times with ease.</li>
+                        <li><strong>Authentic Course Reviews:</strong> Comprehensive reviews and ratings on courses to suggest great places to play.</li>
+                        <li><strong>Game Improvement:</strong> Helpful advice, tips, and drills for players looking for ways to get better.</li>
+                    </ul>
+                </div>
+
+                <!-- NEW REVISION: Updated src to "Foundersphoto.jpg" -->
+                <div class="about-image-container">
+                    <img src="Foundersphoto.jpg" alt="The four founders smiling together on a golf course fairway" class="about-img">
+                    Our founders enjoying one of their many rounds of golf together.
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. REGISTRATION SECTION -->
+        <section id="register" class="section register-section">
+            <h2>Join the Community</h2>
+            <p class="form-intro">Create your free account today and start sharing your golf experiences with players around the world.</p>
+
+            <form action="https://formspree.io/f/mqpebker" method="post" class="registration-form">
+                <div class="form-group">
+                    <label for="full-name">Full Name *</label>
+                    <input type="text" id="full-name" name="full_name" placeholder="e.g. Arnold Palmer" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" placeholder="e.g. golfer@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="e.g. (555) 123-4567">
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Mailing Address</label>
+                    <textarea id="address" name="address" rows="3" placeholder="Street Address, City, State, Zip Code"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="experience">Golf Experience Level *</label>
+                    <select id="experience" name="golf_experience" required>
+                        <option value="" disabled selected>-- Select your experience level --</option>
+                        <option value="beginner">Beginner (Just starting out)</option>
+                        <option value="intermediate">Intermediate (Play regularly / Handicap 15-30)</option>
+                        <option value="advanced">Advanced (Handicap under 15)</option>
+                        <option value="scratch">Scratch / Competitive Player</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-submit">Submit Registration</button>
+            </form>
+        </section>
+
+        <!-- 4. CONTACT US SECTION -->
+        <section id="contact" class="section contact-section">
+            <h2>Contact Us</h2>
+            <p class="table-intro">Have questions, feedback, or ideas? Reach out directly to any of our four founders below:</p>
+
+            <!-- Table Wrapper for Responsive Horizontal Scrolling -->
+            <div class="table-container">
+                <table class="founders-table">
+                    <thead>
+                        <tr>
+                            <th>Founder Name</th>
+                            <th>Office Address</th>
+                            <th>Phone Number</th>
+                            <th>Direct Email</th>
+                            <th>Social Media</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>David Miller</td>
+                            <td>123 Fairway Lane, Augusta, GA</td>
+                            <td>(555) 234-5678</td>
+                            <td><a href="mailto:david@growthegame.com">david@growthegame.com</a></td>
+                            <td class="social-links">
+                                <a href="#">Instagram</a> | <a href="#">TikTok</a> | <a href="#">Facebook</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Samantha Reed</td>
+                            <td>125 Fairway Lane, Augusta, GA</td>
+                            <td>(555) 345-6789</td>
+                            <td><a href="mailto:samantha@growthegame.com">samantha@growthegame.com</a></td>
+                            <td class="social-links">
+                                <a href="#">Instagram</a> | <a href="#">TikTok</a> | <a href="#">Facebook</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Tyler Brooks</td>
+                            <td>127 Fairway Lane, Augusta, GA</td>
+                            <td>(555) 456-7890</td>
+                            <td><a href="mailto:tyler@growthegame.com">tyler@growthegame.com</a></td>
+                            <td class="social-links">
+                                <a href="#">Instagram</a> | <a href="#">TikTok</a> | <a href="#">Facebook</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Chloe Bennett</td>
+                            <td>129 Fairway Lane, Augusta, GA</td>
+                            <td>(555) 567-8901</td>
+                            <td><a href="mailto:chloe@growthegame.com">chloe@growthegame.com</a></td>
+                            <td class="social-links">
+                                <a href="#">Instagram</a> | <a href="#">TikTok</a> | <a href="#">Facebook</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- NEW REVISION: Back to Top Button linking to #top anchor -->
+        <div class="back-to-top-wrapper">
+            <a href="#top" class="btn btn-top">Back to Top ↑</a>
+        </div>
+
+    </main>
+
+    <!-- ========================================== -->
+    <!-- FOOTER SECTION                             -->
+    <!-- ========================================== -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p class="footer-brand">Grow the Game</p>
+            <p class="footer-tagline">Expanding the game for all to enjoy.</p>
+            
+            <!-- Repeated Quick Links -->
+            <ul class="footer-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#register">Register</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+
+            <p class="copyright">&copy; 2026 Grow the Game. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

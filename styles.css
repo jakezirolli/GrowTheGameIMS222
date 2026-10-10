@@ -1,0 +1,538 @@
+/* ==========================================================================
+   1. GLOBAL STYLES & RESET
+   ========================================================================== */
+
+/* Smooth Scrolling for Anchor Links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Color Variables & Base Reset */
+body {
+    margin: 0;
+    padding: 0;
+    /* Color Palette: Forest Green, Kelly Green, Cream, Soft Pastel Green */
+    background-color: #f0f7f4; /* Soft pastel green background */
+    color: #1b2e21;           /* Deep green-charcoal for strong contrast */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.65;
+}
+
+/* Base Paragraph Typography */
+p {
+    font-size: 1.15rem;
+    margin-top: 0;
+    margin-bottom: 1.2rem;
+}
+
+/* Headings use Monospace Font Stack */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #1e4d2b; /* Forest Green */
+    margin-top: 0;
+}
+
+/* Section Headings (h2) with Underline matching text color */
+h2 {
+    font-size: 1.8rem;
+    border-bottom: 3px solid #1e4d2b;
+    padding-bottom: 0.4rem;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+}
+
+/* Subheadings (h3) with Underline matching text color */
+h3 {
+    font-size: 1.35rem;
+    border-bottom: 2px solid #1e4d2b;
+    padding-bottom: 0.25rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+/* Images Responsive Defaults */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Shared Container Section Styling */
+.section {
+    padding: 3rem 2rem;
+    max-width: 1100px;
+    margin: 0 auto 2.5rem auto;
+    background-color: #fdfbf7; /* Cream background for content containers */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border: 1px solid #dbe8dd;
+}
+
+/* General Button Styles */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.75rem;
+    font-family: 'Gill Sans', sans-serif;
+    font-size: 1.05rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px; /* Rounded corners */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary, .btn-submit {
+    background-color: #2e8b57; /* Kelly Green */
+    color: #ffffff;
+}
+
+/* Button Hover Effects */
+.btn-primary:hover, .btn-submit:hover {
+    background-color: #1e4d2b; /* Darkens on hover */
+    transform: translateY(-2px);
+}
+
+/* NEW REVISION: Styling for the Back to Top button */
+.back-to-top-wrapper {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.btn-top {
+    background-color: #1e4d2b; /* Forest Green */
+    color: #fdfbf7;
+    border: 1px solid #2e8b57;
+    padding: 1rem 1.5rem;
+    font-size: 0.95rem;
+}
+
+.btn-top:hover {
+    background-color: #2e8b57; /* Kelly Green on hover */
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+
+/* ==========================================================================
+   2. HEADER & NAVIGATION STYLES
+   ========================================================================== */
+
+.site-header {
+    background-color: #1e4d2b; /* Forest Green */
+    color: #fdfbf7;           /* Cream Text */
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo-icon {
+    font-size: 1.8rem;
+}
+
+.logo-text {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fdfbf7;
+}
+
+/* Navigation List */
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.main-nav a {
+    color: #fdfbf7;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.05rem;
+    padding: 0.3rem 0;
+    transition: color 0.2s ease, border-bottom 0.2s ease;
+}
+
+/* Nav Link Hover Effects */
+.main-nav a:hover {
+    color: #a3e6b1; /* Lighter pastel accent on hover */
+    border-bottom: 2px solid #a3e6b1;
+}
+
+
+/* ==========================================================================
+   3. HOME SECTION & REVIEW CARDS STYLES
+   ========================================================================== */
+
+/* NEW REVISION: Updated background image URL to Backgroundimage.jpeg */
+.hero-banner {
+    background: linear-gradient(rgba(20, 50, 30, 0.65), rgba(20, 50, 30, 0.65)), 
+                url('Backgroundimage.jpeg') no-repeat center center/cover;
+    min-height: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 2rem;
+    border-radius: 10px;
+    color: #ffffff;
+    margin-bottom: 3rem;
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.3);
+}
+
+/* Banner heading text styling */
+.hero-banner h1 {
+    color: #ffffff;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.tagline {
+    font-style: italic;
+    font-size: 1.35rem;
+    color: #a3e6b1; /* Soft pastel accent */
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.welcome-text {
+    max-width: 850px;
+    margin: 0 auto 1.5rem auto;
+    color: #fdfbf7;
+}
+
+.section-intro {
+    text-align: center;
+    color: #4a5d4e;
+    margin-bottom: 2rem;
+}
+
+/* Reviews Cards Layout */
+.cards-grid {
+    display: flex;
+    gap: 3rem;
+    justify-content: space-between;
+}
+
+/* Review Card Styling */
+.card {
+    background-color: #ffffff;
+    border: 1px solid #d2e3d5;
+    border-radius: 10px;
+    overflow: hidden;
+    flex: 1;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 1.25rem;
+}
+
+.reviewer-name {
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+    border-bottom: none;
+    padding-bottom: 0;
+    display: block;
+}
+
+.course-name {
+    font-size: 0.95rem;
+    font-weight: normal;
+    color: #2e8b57;
+    margin-left: 0.25rem;
+}
+
+.rating {
+    color: #d97706;
+    margin-bottom: 0.75rem;
+}
+
+.review-snippet {
+    font-size: 1rem;
+    color: #2c3e30;
+    margin: 0;
+}
+
+/* Card Hover Lift Effect */
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ==========================================================================
+   4. ABOUT US SECTION STYLES
+   ========================================================================== */
+
+.about-wrapper {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.about-text {
+    flex: 1.2;
+}
+
+.about-image-container {
+    flex: 0.8;
+}
+
+.about-img {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    width: 100%;
+}
+
+.map-wrapper {
+    margin: 1rem 0 1.5rem 0;
+}
+
+.map-embed {
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.special-list {
+    margin-top: 1rem;
+    padding-left: 1.25rem;
+    font-size: 1.1rem;
+}
+
+.special-list li {
+    margin-bottom: 0.75rem;
+}
+
+.external-link {
+    color: #2e8b57;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.external-link:hover {
+    color: #1e4d2b;
+}
+
+
+/* ==========================================================================
+   5. REGISTRATION FORM STYLES
+   ========================================================================== */
+
+.registration-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    border: 1px solid #d2e3d5;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.form-intro {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.25rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 0.4rem;
+    color: #1e4d2b;
+    font-size: 1.05rem;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    padding: 0.75rem;
+    font-family: inherit;
+    font-size: 1rem;
+    border: 1px solid #a3c4ab;
+    border-radius: 6px;
+    background-color: #fcfdfc;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #2e8b57;
+    box-shadow: 0 0 0 3px rgba(46, 139, 87, 0.2);
+}
+
+.btn-submit {
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+
+/* ==========================================================================
+   6. CONTACT US TABLE STYLES
+   ========================================================================== */
+
+.table-intro {
+    margin-bottom: 1.5rem;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+.founders-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+
+.founders-table th, 
+.founders-table td {
+    padding: 0.85rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid #e1ebe2;
+    font-size: 1rem;
+}
+
+.founders-table th {
+    background-color: #1e4d2b;
+    color: #ffffff;
+    font-family: 'DejaVu Sans Mono', 'Courier New', Courier, monospace;
+}
+
+.founders-table tr:hover {
+    background-color: #f4f9f5;
+}
+
+.founders-table a {
+    color: #2e8b57;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.founders-table a:hover {
+    text-decoration: underline;
+}
+
+.social-links a {
+    margin: 0 0.2rem;
+}
+
+
+/* ==========================================================================
+   7. FOOTER STYLES
+   ========================================================================== */
+
+.site-footer {
+    background-color: #13331c;
+    color: #fdfbf7;
+    text-align: center;
+    padding: 2.5rem 1rem;
+    margin-top: 3rem;
+}
+
+.footer-brand {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+}
+
+.footer-tagline {
+    font-style: italic;
+    color: #a3e6b1;
+    margin-bottom: 1.25rem;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.footer-links a {
+    color: #fdfbf7;
+    text-decoration: none;
+    font-size: 1.05rem;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+    color: #a3e6b1;
+}
+
+.copyright {
+    font-size: 0.9rem;
+    color: #fdfbf7;
+    margin: 0;
+}
+
+
+/* ==========================================================================
+   8. RESPONSIVE DESIGN (MEDIA QUERIES)
+   ========================================================================== */
+
+@media (max-width: 768px) {
+    .site-header {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.75rem;
+    }
+
+    .hero-banner {
+        min-height: 360px;
+        padding: 2rem 1rem;
+    }
+
+    .cards-grid {
+        flex-direction: column;
+    }
+
+    .about-wrapper {
+        flex-direction: column;
+    }
+
+    .section {
+        padding: 1.75rem 1rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+}
